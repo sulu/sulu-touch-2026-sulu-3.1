@@ -25,29 +25,29 @@
         "chat": "https://sulu.io/services-and-support#chat"
     },
     "require": {
-        "php": "^8.2",
+        "php": "^8.4",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "cmsig/seal-loupe-adapter": "^0.12.2",
-        "doctrine/doctrine-bundle": "^2.13",
+        "doctrine/doctrine-bundle": "^3.3",
         "doctrine/doctrine-fixtures-bundle": "^3.6 || ^4.0",
         "doctrine/doctrine-migrations-bundle": "^3.3",
         "friendsofsymfony/http-cache-bundle": "^3.0",
-        "scheb/2fa-bundle": "^7.4",
-        "scheb/2fa-email": "^7.4",
-        "scheb/2fa-trusted-device": "^7.4",
+        "scheb/2fa-bundle": "^8.1",
+        "scheb/2fa-email": "^8.1",
+        "scheb/2fa-trusted-device": "^8.1",
         "stof/doctrine-extensions-bundle": "^1.11",
         "sulu/sulu": "~3.1.0@dev",
-        "symfony/config": "^7.4",
-        "symfony/dotenv": "^7.4",
+        "symfony/config": "^8.1",
+        "symfony/dotenv": "^8.1",
         "symfony/flex": "^1.17 || ^2.0",
-        "symfony/framework-bundle": "^7.4",
-        "symfony/mailer": "^7.4",
-        "symfony/monolog-bridge": "^7.4",
+        "symfony/framework-bundle": "^8.1",
+        "symfony/mailer": "^8.1",
+        "symfony/monolog-bridge": "^8.1",
         "symfony/monolog-bundle": "^4.0",
-        "symfony/runtime": "^7.4",
-        "symfony/security-bundle": "^7.4",
-        "symfony/twig-bundle": "^7.4"
+        "symfony/runtime": "^8.1",
+        "symfony/security-bundle": "^8.1",
+        "symfony/twig-bundle": "^8.1"
     },
     "require-dev": {
         "cmsig/seal-memory-adapter": "^0.12.2",
@@ -63,12 +63,12 @@
         "phpunit/phpunit": "^11.5 || ^12.1 || ^13.0",
         "rector/rector": "^2.0",
         "sulu/sulu-rector": "^2.0",
-        "symfony/browser-kit": "^7.4",
-        "symfony/css-selector": "^7.4",
-        "symfony/debug-bundle": "^7.4",
-        "symfony/error-handler": "^7.4",
+        "symfony/browser-kit": "^8.1",
+        "symfony/css-selector": "^8.1",
+        "symfony/debug-bundle": "^8.1",
+        "symfony/error-handler": "^8.1",
         "symfony/thanks": "^1.2",
-        "symfony/web-profiler-bundle": "^7.4",
+        "symfony/web-profiler-bundle": "^8.1",
         "vincentlanglet/twig-cs-fixer": "^3.0 || ^4.0"
     },
     "conflict": {
@@ -197,7 +197,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": true,
-            "require": "7.4.*"
+            "require": "8.1.*"
         }
     }
 }
