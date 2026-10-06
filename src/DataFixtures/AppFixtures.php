@@ -82,7 +82,7 @@ class AppFixtures extends Fixture implements OrderedFixtureInterface
         }
 
         foreach ((new Finder())->files()->in(__DIR__ . '/documents')->sortByName() as $file) {
-            $this->createMedia($manager, $collection, $file, MediaInterface::TYPE_DOCUMENT, 'application/pdf');
+            $this->createMedia($manager, $collection, $file, MediaInterface::TYPE_DOCUMENT, 'application/pdf', ['en', 'fr']);
         }
 
         foreach (self::CONTACTS as $contact) {
@@ -122,12 +122,16 @@ class AppFixtures extends Fixture implements OrderedFixtureInterface
         return $collection;
     }
 
+    /**
+     * @param string[] $contentLocales
+     */
     private function createMedia(
         ObjectManager $manager,
         CollectionInterface $collection,
         SplFileInfo $fileInfo,
         string $type,
         string $mimeType,
+        array $contentLocales = [],
     ): MediaInterface {
         $fileName = $fileInfo->getBasename();
         $storageOptions = $this->storage->save($fileInfo->getPathname(), $fileName);
@@ -147,6 +151,7 @@ class AppFixtures extends Fixture implements OrderedFixtureInterface
             ->setName($fileName)
             ->setStorageOptions($storageOptions)
             ->setMimeType($mimeType)
+            ->setContentLocales($contentLocales)
             ->setFile($file);
 
         $file->addFileVersion($fileVersion);

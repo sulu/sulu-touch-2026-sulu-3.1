@@ -47,6 +47,7 @@
         "symfony/monolog-bundle": "^4.0",
         "symfony/runtime": "^8.1",
         "symfony/security-bundle": "^8.1",
+        "symfony/semaphore": "^8.1",
         "symfony/twig-bundle": "^8.1"
     },
     "require-dev": {
