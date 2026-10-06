@@ -4,6 +4,7 @@
           xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
 
     <key>quote</key>
+    <group>content</group>
 
     <meta>
         <title lang="en">Quote</title>
