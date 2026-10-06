@@ -11,3 +11,11 @@ sulu_admin:
             default_type: quote
         article:
             default_type: blog
+    text_editor:
+        configs:
+            intro:
+                enter_mode: br
+                tags:
+                    strong: true
+                    i: true
+                    a: true
