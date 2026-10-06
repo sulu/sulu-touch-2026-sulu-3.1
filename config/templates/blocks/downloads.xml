@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<template xmlns="http://schemas.sulu.io/template/template"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
+
+    <key>downloads</key>
+
+    <meta>
+        <title lang="en">Downloads</title>
+        <title lang="de">Downloads</title>
+    </meta>
+
+    <properties>
+        <property name="files" type="media_selection" mandatory="true">
+            <meta>
+                <title lang="en">Files</title>
+                <title lang="de">Dateien</title>
+            </meta>
+
+            <params>
+                <param name="types" value="document,video"/>
+            </params>
+        </property>
+    </properties>
+</template>

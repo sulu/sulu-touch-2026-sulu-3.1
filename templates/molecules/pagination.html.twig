@@ -1,0 +1,11 @@
+{% if pagination.paginated|default(false) and pagination.maxPage > 1 %}
+    <nav class="pagination">
+        {% if pagination.page > 1 %}
+            <a href="?p={{ pagination.page - 1 }}">&larr; Previous</a>
+        {% endif %}
+        <span>Page {{ pagination.page }} of {{ pagination.maxPage }}</span>
+        {% if pagination.hasNextPage %}
+            <a href="?p={{ pagination.page + 1 }}">Next &rarr;</a>
+        {% endif %}
+    </nav>
+{% endif %}

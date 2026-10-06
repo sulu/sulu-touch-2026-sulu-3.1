@@ -1,0 +1,28 @@
+{% set account = settings.content.account|default %}
+{% set site_name = account.name|default('Sulu') %}
+<header class="site-header">
+    <div class="container site-header__inner">
+        <a class="site-header__brand" href="{{ sulu_content_root_path() }}">
+            {% if account.logo|default %}
+                <img src="{{ account.logo.thumbnails['x80'] }}"
+                     alt="{{ site_name }}">
+            {% else %}
+                {{ site_name }}
+            {% endif %}
+        </a>
+
+        <nav class="site-nav">
+            <ul>
+                {% for item in sulu_page_navigation_root_tree('main', 1, {
+                    title: 'title',
+                    url: 'url',
+                }) %}
+                    <li>
+                        <a href="{{ sulu_content_path(item.url) }}"
+                           title="{{ item.title }}">{{ item.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<template xmlns="http://schemas.sulu.io/template/template"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
+
+    <key>text_image</key>
+
+    <meta>
+        <title lang="en">Text with image</title>
+        <title lang="de">Text mit Bild</title>
+    </meta>
+
+    <properties>
+        <property name="text" type="text_editor">
+            <meta>
+                <title lang="en">Text</title>
+                <title lang="de">Text</title>
+            </meta>
+        </property>
+
+        <property name="image" type="single_media_selection">
+            <meta>
+                <title lang="en">Image</title>
+                <title lang="de">Bild</title>
+            </meta>
+
+            <params>
+                <param name="types" value="image"/>
+                <param name="displayOptions" type="collection">
+                    <param name="left" value="true"/>
+                    <param name="right" value="true"/>
+                </param>
+            </params>
+        </property>
+    </properties>
+</template>

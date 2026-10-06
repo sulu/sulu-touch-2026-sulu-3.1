@@ -1,0 +1,83 @@
+{
+    "settings": "Impostazioni del sito",
+    "homepage": {
+        "title": "Home",
+        "featured": "In evidenza",
+        "editorsPicks": "Scelti dalla redazione",
+        "latest": "Ultimi aggiornamenti",
+        "news": "Notizie",
+        "blog": "Dal blog"
+    },
+    "pages": {
+        "news": {
+            "title": "Notizie",
+            "url": "/notizie",
+            "intro": "Gli ultimi annunci, rilasci ed eventi."
+        },
+        "blog": {
+            "title": "Blog",
+            "url": "/blog",
+            "intro": "Storie, guide e opinioni del nostro team."
+        }
+    },
+    "sections": {
+        "story": "La storia",
+        "next": "Cosa viene dopo"
+    },
+    "quotes": [
+        ["Rilasciare poco, rilasciare spesso", "I rilasci migliori sono quelli noiosi: piccoli, frequenti e completamente reversibili."],
+        ["Prima il contenuto", "I redattori non vogliono più campi. Vogliono i campi giusti nell'ordine giusto."],
+        ["Le prestazioni sono una funzionalità", "Ogni millisecondo risparmiato su una pagina è un millisecondo che i lettori dedicano al contenuto."],
+        ["Aperto per scelta", "L'open source non è una licenza, è l'abitudine di lavorare in pubblico e di ascoltare."],
+        ["Design system", "Una buona libreria di blocchi permette ai redattori di creare pagine che non abbiamo mai dovuto progettare."],
+        ["Community", "Le domande che le persone fanno nella nostra community influenzano la roadmap più di qualsiasi riunione."]
+    ],
+    "paragraphs": {
+        "news": [
+            "La novità viene distribuita a tutti i clienti nelle prossime settimane. I progetti esistenti continuano a funzionare senza migrazione e le note di rilascio descrivono ogni passaggio per i team che vogliono adottare subito le nuove funzionalità.",
+            "Durante la fase beta abbiamo lavorato a stretto contatto con le agenzie partner. Il loro feedback ha cambiato due funzionalità e ne ha eliminata una, rendendo il rilascio finale più piccolo e più facile da spiegare.",
+            "I team che vogliono provarlo possono seguire la guida all'aggiornamento o partecipare a uno degli incontri aperti, dove il core team risponde dal vivo e raccoglie idee per la prossima iterazione.",
+            "Il programma completo, le registrazioni e le slide saranno pubblicati su questa pagina. Iscriviti alla newsletter per essere avvisato non appena sono disponibili nuovi materiali."
+        ],
+        "blog": [
+            "Siamo partiti da una sola domanda: cosa deve vedere un redattore sullo schermo per finire una pagina senza chiedere aiuto a uno sviluppatore? Rispondere onestamente ha eliminato metà dei campi previsti.",
+            "L'approccio è semplice da descrivere e difficile da applicare: template piccoli, ogni campo chiamato per ciò che significa per il lettore e blocchi che portano la variazione al posto di nuovi template.",
+            "In pratica abbiamo affiancato sviluppatori e redattori per una settimana. I redattori portavano contenuti reali, gli sviluppatori i template, e ogni differenza diventava un ticket lo stesso pomeriggio.",
+            "Niente di tutto questo richiede un grande team. Una struttura chiara, pochi blocchi riutilizzabili e l'abitudine di rivedere insieme pagine reali portano lontano la maggior parte dei progetti."
+        ]
+    },
+    "news": [
+        ["Sulu 3.1 è disponibile", "La nuova versione minore porta anteprime più veloci, blocchi globali annidati e un nuovo editor delle aree snippet."],
+        ["Pubblicato il programma di Sulu Touch 2026", "Due giorni di talk e workshop su modellazione dei contenuti, prestazioni e l'ecosistema Sulu."],
+        ["Al via il nuovo programma partner", "Le agenzie che lavorano con Sulu ottengono accesso anticipato ai rilasci, formazione e un contatto diretto con il core team."],
+        ["Rilascio di sicurezza per 3.0 e 3.1", "Un rilascio coordinato corregge un problema nella validazione dei caricamenti media. L'aggiornamento è consigliato per tutti i progetti."],
+        ["La documentazione cambia casa", "La documentazione passa a una nuova piattaforma con guide versionate, ricerca full text ed esempi da copiare."],
+        ["Il bundle Article entra nel core", "Gli articoli ora fanno parte di sulu/sulu e condividono lo storage dei contenuti con pagine e snippet."],
+        ["Riepilogo della community call di settembre", "Questo mese abbiamo parlato dell'API delle impostazioni dei blocchi, degli strumenti di aggiornamento e dei piani per la prossima versione minore."],
+        ["Sulu vince un premio open source", "La giuria ha sottolineato l'attenzione del progetto per i redattori e il supporto a lungo termine delle sue versioni major."],
+        ["Hacktoberfest con Sulu", "Le issue per chi contribuisce per la prima volta sono pronte e il core team offre review entro 48 ore."],
+        ["Server MCP per Sulu in beta", "Gli assistenti IA possono ora leggere e modificare pagine, articoli e snippet tramite un'interfaccia MCP documentata."],
+        ["Nuovo ufficio a Vienna", "Il team cresce e apre un secondo ufficio per essere più vicino a clienti e partner dell'Austria orientale."],
+        ["Esteso il supporto a lungo termine per la 2.6", "I progetti che non possono ancora aggiornare ricevono correzioni di sicurezza per altri dodici mesi."],
+        ["Integrazione della ricerca con SEAL", "Il livello di ricerca ora supporta Loupe, Meilisearch ed Elasticsearch tramite un'unica interfaccia adapter."],
+        ["Date dei workshop di primavera", "Sono aperte le iscrizioni ai workshop pratici su template, blocchi e aggiornamenti."],
+        ["Completato l'audit di accessibilità dell'admin", "Un audit esterno ha esaminato l'interfaccia di amministrazione e i primi miglioramenti sono già stati integrati."]
+    ],
+    "blog": [
+        ["Perché modelliamo i contenuti in sezioni", "Le sezioni danno ai redattori una struttura di pagina comprensibile e agli sviluppatori un unico punto in cui definirne lo stile."],
+        ["I blocchi globali in pratica", "Definire un blocco una volta e riutilizzarlo nei template mantiene i form coerenti e i template brevi."],
+        ["Le aree snippet spiegate", "Un'area snippet trasforma uno snippet in impostazioni globali del sito che i redattori modificano senza deploy."],
+        ["Cinque regole per template puliti", "Template brevi, nomi chiari e blocchi per la variazione rendono un progetto facile da mantenere per anni."],
+        ["Da 2.6 a 3.1: diario di un aggiornamento", "Abbiamo aggiornato un progetto cliente di medie dimensioni e annotato ogni passaggio, sorpresa e scorciatoia."],
+        ["Teaser: manuali o automatici?", "Quando un redattore deve scegliere i contenuti a mano e quando una lista smart content fa meglio il lavoro."],
+        ["Progettare prima per i redattori", "Il form dell'admin è il prodotto dei redattori, quindi lo progettiamo con la stessa cura del sito."],
+        ["Formati immagine che scalano", "Pochi formati con nomi chiari coprono la maggior parte dei siti e tengono sotto controllo la cache dei media."],
+        ["Scrivere fixture che raccontano una storia", "Buone fixture mostrano come deve apparire il sito e rendono utile ogni screenshot di review."],
+        ["La forza discreta delle categorie", "Le categorie sono il modo più semplice per strutturare gli articoli tra i template e filtrare le liste del sito."],
+        ["Cosa abbiamo imparato da 100 lanci", "Le abitudini che hanno rispettato le scadenze e le poche decisioni che ci sono sempre tornate indietro."],
+        ["Budget di prestazioni per siti CMS", "Fissare un budget presto mantiene le pagine veloci a lungo dopo il lancio, anche con contenuti in crescita."],
+        ["Contatti e organizzazioni come contenuto", "Usare contatti e organizzazioni nei template evita di duplicare nomi, ruoli e loghi nelle pagine."],
+        ["Revisioni in coppia con i redattori", "Rivedere pagine reali insieme ai redattori trova più problemi di qualsiasi suite di test automatici."],
+        ["Una guida di stile in un solo file CSS", "Per siti piccoli e medi spesso basta un semplice foglio di stile con custom properties."]
+    ]
+}

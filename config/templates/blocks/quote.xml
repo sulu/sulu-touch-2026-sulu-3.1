@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<template xmlns="http://schemas.sulu.io/template/template"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
+
+    <key>quote</key>
+
+    <meta>
+        <title lang="en">Quote</title>
+        <title lang="de">Zitat</title>
+    </meta>
+
+    <properties>
+        <property name="quote" type="single_snippet_selection" mandatory="true">
+            <meta>
+                <title lang="en">Quote</title>
+                <title lang="de">Zitat</title>
+            </meta>
+
+            <params>
+                <param name="properties" type="collection">
+                    <param name="quote" value="quote"/>
+                    <param name="author" value="author"/>
+                </param>
+            </params>
+        </property>
+    </properties>
+</template>

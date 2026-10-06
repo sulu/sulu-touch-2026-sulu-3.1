@@ -1,0 +1,79 @@
+/* Centered beige slides: `<!-- _class: center -->` (live demo, quote, stats). */
+section.center {
+    background-color: var(--bg-beige);
+    padding: 268px 140px 0 140px;
+    text-align: center;
+}
+
+section.center h1 {
+    min-height: 0;
+    margin: 0 0 26px 0;
+    font-size: 70px;
+    line-height: 1.17;
+}
+
+section.center p {
+    font-size: 20px;
+    line-height: 1.3;
+    color: var(--grey);
+}
+
+/* Quote: `<!-- _class: center quote -->`, attribution via `<!-- _footer: ... -->` */
+section.quote blockquote {
+    position: absolute;
+    left: 120px;
+    top: 275px;
+    width: 1040px;
+    margin: 0;
+}
+
+section.quote blockquote::before {
+    content: '';
+    position: absolute;
+    left: 480px;
+    top: -95px;
+    width: 80px;
+    height: 80px;
+    background: url('./assets/illustrations/quote.svg') no-repeat center / contain;
+}
+
+section.quote blockquote p {
+    font-size: 64px;
+    line-height: 1.17;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0;
+    color: var(--navy);
+}
+
+section.quote > footer {
+    left: 0;
+    right: 0;
+    top: 647px;
+    text-align: center;
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.04;
+    color: var(--grey);
+}
+
+/* Stats: `<!-- _class: center stats -->` with a `::: stats` block */
+section.stats {
+    padding-top: 128px;
+}
+
+section.stats h1 {
+    margin-bottom: 12px;
+}
+
+section.stats > p {
+    font-size: 16px;
+    line-height: 1.04;
+}
+
+section.stats .stats {
+    position: absolute;
+    left: 50px;
+    top: 320px;
+    text-align: center;
+}

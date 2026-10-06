@@ -1,0 +1,14 @@
+<article class="teaser">
+    <a class="teaser__link" href="{{ url }}">
+        {% if image|default %}
+            <img class="teaser__image" src="{{ image.thumbnails['600x400'] }}" alt="{{ image.title|default(title) }}" loading="lazy">
+        {% endif %}
+        <div class="teaser__body">
+            <h3 class="teaser__title">{{ title }}</h3>
+            {% if description|default %}
+                <div class="teaser__description">{{ description|raw }}</div>
+            {% endif %}
+            <span class="teaser__more">{{ moreText|default('Read more') }}</span>
+        </div>
+    </a>
+</article>

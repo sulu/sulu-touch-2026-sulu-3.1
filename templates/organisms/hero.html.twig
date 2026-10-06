@@ -1,0 +1,11 @@
+<header class="hero">
+    <div class="container{{ narrow|default(false) ? ' container--narrow' }}">
+        <h1>{{ title }}</h1>
+        {% if lead|default %}
+            <p class="hero__lead">{{ lead }}</p>
+        {% endif %}
+        {% if intro|default %}
+            <div class="hero__intro">{{ intro|raw }}</div>
+        {% endif %}
+    </div>
+</header>

@@ -1,0 +1,19 @@
+{% set account = settings.content.account|default %}
+{% set site_name = account.name|default('Sulu') %}
+<footer class="site-footer">
+    <div class="container site-footer__inner">
+        <p>&copy; {{ 'now'|date('Y') }} {{ site_name }}</p>
+
+        <ul class="site-footer__contact">
+            {% if account.mainEmail|default %}
+                <li><a href="mailto:{{ account.mainEmail }}">{{ account.mainEmail }}</a></li>
+            {% endif %}
+            {% if account.mainPhone|default %}
+                <li><a href="tel:{{ account.mainPhone }}">{{ account.mainPhone }}</a></li>
+            {% endif %}
+            {% if account.mainUrl|default %}
+                <li><a href="{{ account.mainUrl }}" rel="noopener">{{ account.mainUrl }}</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</footer>

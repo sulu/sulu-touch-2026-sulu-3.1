@@ -1,0 +1,29 @@
+{
+  "name": "sulu-touch-2026-sulu-3-1-presentation",
+  "version": "1.0.0",
+  "description": "Sulu Touch 2026: What is new in Sulu 3.1",
+  "private": true,
+  "scripts": {
+    "css:build": "postcss themes/sulu/sulu.css -o themes/sulu.css",
+    "css:watch": "postcss themes/sulu/sulu.css -o themes/sulu.css --watch --verbose --poll",
+    "marp:watch": "marp --html --allow-local-files --engine engine.js --theme ./themes/sulu.css --watch --preview talk.md",
+    "dev": "concurrently --kill-others --names \"CSS,MARP\" --prefix \"[{name}]\" --prefix-colors \"blue.bold,yellow.bold\" \"npm run css:watch\" \"npm run marp:watch\"",
+    "build": "npm run css:build && marp --html --allow-local-files --engine engine.js --theme ./themes/sulu.css talk.md",
+    "build:pdf": "npm run css:build && marp --html --allow-local-files --engine engine.js --theme ./themes/sulu.css talk.md --pdf",
+    "build:notes": "npm run css:build && marp --html --allow-local-files --engine engine.js --theme ./themes/sulu.css talk.md --notes"
+  },
+  "author": "Johannes Wachter",
+  "license": "MIT",
+  "dependencies": {
+    "@marp-team/marp-cli": "^4.0.3",
+    "markdown-it-container": "^4.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "concurrently": "^8.2.2",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.0.0",
+    "postcss-nested": "^6.0.1"
+  }
+}

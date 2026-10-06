@@ -1,0 +1,37 @@
+{% set settings = sulu_snippet_load_by_area('settings') %}
+<!DOCTYPE html>
+<html lang="{{ app.request.locale|split('_')[0] }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% block meta %}
+        {{ include('@SuluWebsite/Extension/seo.html.twig', {
+            seo: extension.seo|default([]),
+            content: content|default([]),
+            localizations: localizations|default([]),
+            shadowBaseLocale: shadowBaseLocale|default(),
+        }, with_context: false) }}
+    {% endblock %}
+
+    {% block style %}
+        <link rel="stylesheet" href="{{ asset('website/css/main.css') }}">
+    {% endblock %}
+</head>
+<body>
+    {% block header %}
+        {{ include('organisms/header.html.twig', {settings: settings}, with_context: false) }}
+    {% endblock %}
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    {% block footer %}
+        {{ include('organisms/footer.html.twig', {settings: settings}, with_context: false) }}
+    {% endblock %}
+
+    {% block javascripts %}{% endblock %}
+</body>
+</html>

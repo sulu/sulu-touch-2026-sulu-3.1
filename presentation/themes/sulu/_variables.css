@@ -1,0 +1,19 @@
+/* Values taken from the Keynote master "Sulu" (1280x720, 1pt = 1px). */
+:root {
+    --navy: #112a46;
+    --teal: #3f6e77;
+    --grey: #6b7c8c;
+    --grey-dark: #4b5a6e;
+    --bg-light: #dce5e4;
+    --bg-beige: #e8e6de;
+    --card: #ffffff;
+    --note: #d5dcdc;
+    --line: #6b7c8c;
+
+    --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'IBM Plex Mono', 'Fira Code', monospace;
+    --light-blue: #c3e2ff;
+
+    --radius: 10px;
+    --gutter: 50px;
+}

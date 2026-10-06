@@ -1,0 +1,24 @@
+{% extends 'templates/base.html.twig' %}
+
+{% block content %}
+    {{ include('organisms/hero.html.twig', {title: content.title, intro: content.intro}, with_context: false) }}
+
+    <section class="section">
+        <div class="container">
+            <div class="teaser-grid">
+                {% for article in content.articles %}
+                    {{ include('organisms/teaser.html.twig', {
+                        url: sulu_content_path(article.url),
+                        title: article.excerptTitle|default(article.title),
+                        description: article.excerptDescription|default(article.lead),
+                        image: article.excerptImage,
+                    }, with_context: false) }}
+                {% else %}
+                    <p>No articles found.</p>
+                {% endfor %}
+            </div>
+
+            {{ include('molecules/pagination.html.twig', {pagination: view.articles|default({})}, with_context: false) }}
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formats xmlns="http://schemas.sulu.io/media/formats"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://schemas.sulu.io/media/formats http://schemas.sulu.io/media/formats-1.1.xsd">
+
+    <!-- See: http://docs.sulu.io/en/latest/book/image-formats.html how to define image-formats -->
+
+    <format key="x80">
+        <meta>
+            <title lang="en">Logo</title>
+            <title lang="de">Logo</title>
+        </meta>
+
+        <scale y="80"/>
+    </format>
+
+    <format key="120x120">
+        <meta>
+            <title lang="en">Portrait</title>
+            <title lang="de">Porträt</title>
+        </meta>
+
+        <scale x="120" y="120" mode="outbound"/>
+    </format>
+
+    <format key="600x400">
+        <meta>
+            <title lang="en">Teaser</title>
+            <title lang="de">Teaser</title>
+        </meta>
+
+        <scale x="600" y="400" mode="outbound"/>
+    </format>
+
+    <format key="800x">
+        <meta>
+            <title lang="en">Content image</title>
+            <title lang="de">Inhaltsbild</title>
+        </meta>
+
+        <scale x="800"/>
+    </format>
+
+    <format key="1600x600">
+        <meta>
+            <title lang="en">Header image</title>
+            <title lang="de">Headerbild</title>
+        </meta>
+
+        <scale x="1600" y="600" mode="outbound"/>
+    </format>
+</formats>

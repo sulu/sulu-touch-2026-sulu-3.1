@@ -1,0 +1,25 @@
+/* Illustrations sit on the right half of a content slide, next to a 590px text column.
+   `![](…)` fits the drawing into the box the Keynote decks use for hand-placed
+   illustrations (x 660-1230, y 190-650), centred, so square and landscape
+   drawings both fill the space without running off the slide.
+   `<img style="left:…;top:…;width:…">` places a drawing by hand, like in Keynote. */
+section > p > img,
+section > img {
+    position: absolute;
+    margin: 0;
+}
+
+section:not(.title) > p > img:not([style]),
+section:not(.title) > img:not([style]) {
+    left: 660px;
+    top: 190px;
+    width: 570px;
+    height: 460px;
+    object-fit: contain;
+    object-position: center;
+}
+
+section > p:has(> img:only-child) {
+    position: static;
+    margin: 0;
+}

@@ -1,0 +1,142 @@
+section {
+    width: 1280px;
+    height: 720px;
+    padding: 120px var(--gutter) 0 var(--gutter);
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--bg-light);
+    /* 1px rule below the logo, drawn as a background so both pseudo elements stay free */
+    background-image: linear-gradient(var(--line), var(--line));
+    background-repeat: no-repeat;
+    background-size: 1180px 2px;
+    background-position: 50px 74px;
+    font-family: var(--font-sans);
+    color: var(--navy);
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+/* Logo top left */
+section::before {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    width: 100px;
+    height: 26.66px;
+    background: url('./assets/sulu-logo.svg') no-repeat left top / 100px 26.66px;
+}
+
+/* Page number top right */
+section::after {
+    content: attr(data-marpit-pagination);
+    position: absolute;
+    left: 1126px;
+    top: 33px;
+    right: auto;
+    bottom: auto;
+    width: 100px;
+    height: auto;
+    padding: 0;
+    text-align: right;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: var(--navy);
+}
+
+/* Kicker above the title: `<!-- _header: The idea -->` */
+section > header {
+    position: absolute;
+    left: 50px;
+    top: 101px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.04;
+    color: var(--grey);
+}
+
+section > footer {
+    position: absolute;
+    left: 597px;
+    top: 647px;
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 16px;
+    line-height: 1.56;
+    color: var(--navy);
+}
+
+/* Keynote decks keep the title placeholder 70px high on card slides and
+   put lists at y=340 on text slides. */
+section h1 {
+    min-height: 70px;
+    margin: 0 0 30px 0;
+}
+
+section h1 + ul,
+section h1 + ol {
+    margin-top: 151px;
+}
+
+/* Teal subheading between title and list (Keynote: 24pt bold at y=280) */
+section h1 + h2 {
+    margin-top: 70px;
+}
+
+/* Headed paragraphs in the body: `### Heading` followed by text */
+section > h3 {
+    margin: 0;
+}
+
+section > h1 + h3 {
+    margin-top: 44px;
+}
+
+section > p + h3 {
+    margin-top: 59px;
+}
+
+section > h3 + p + h3 {
+    margin-top: 0;
+}
+
+section > h3 + p {
+    font-size: 20px;
+    line-height: 1.35;
+    margin: -9px 0 17px 0;
+}
+
+/* Lists next to an illustration keep the 590px text column. The title too, when the
+   illustration sits in the default box, so a long title wraps instead of running under it. */
+section:not(.title):has(> p > img:not([style]), > img:not([style])) > h1,
+section:has(> p > img, > img) > ul,
+section:has(> p > img, > img) > h3,
+section:has(> p > img, > img) > h3 + p {
+    max-width: 590px;
+}
+
+section:has(> p > img, > img) > p:not(:has(img)) {
+    max-width: 650px;
+}
+
+section.big-title h1 {
+    font-size: 70px;
+    line-height: 1.17;
+    margin-top: 9px;
+}
+
+section.big-title h1 + h2 {
+    margin-top: 74px;
+}
+
+li > p {
+    margin: 0;
+}
+
+section.beige {
+    background-color: var(--bg-beige);
+}

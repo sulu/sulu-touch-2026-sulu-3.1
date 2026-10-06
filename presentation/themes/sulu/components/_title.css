@@ -1,0 +1,89 @@
+/* Title slide: `<!-- _class: title -->`
+   Teal background with the illustration pattern at 15% opacity,
+   title bottom-aligned in a box from y=60 to y=562, mono subtitle on white. */
+section.title {
+    background-color: var(--teal);
+    /* Keynote draws the pattern at 15% opacity: a teal layer at 85% on top of the
+       full-strength pattern image gives the same result. */
+    background-image: linear-gradient(rgba(63, 110, 119, 0.848), rgba(63, 110, 119, 0.848)), url('./assets/title-pattern.png');
+    background-size: cover, 1276.8px 764.6px;
+    background-position: 0 0, 1.6px -22.3px;
+    background-repeat: no-repeat;
+    padding: 0;
+    color: #fff;
+}
+
+section.title::before,
+section.title::after {
+    display: none;
+}
+
+section.title h1 {
+    position: absolute;
+    left: 110px;
+    bottom: 164px;
+    width: 1100px;
+    margin: 0;
+    min-height: 0;
+    font-size: 120px;
+    line-height: 1.19;
+    color: #fff;
+}
+
+section.title p {
+    position: absolute;
+    left: 114px;
+    top: 574px;
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 24px;
+    line-height: 1.5;
+    color: var(--navy);
+    background: #fff;
+    padding: 0 1px;
+}
+
+section.title p:has(img) {
+    position: static;
+    background: none;
+    padding: 0;
+}
+
+section.title img {
+    position: absolute;
+    left: 511px;
+    top: 217px;
+    width: 823px;
+}
+
+/* The master's title box (1100px) runs under the drawing. Keynote authors kept the lines
+   short by hand, the theme wraps before the drawing starts at x=870. */
+section.title:has(img) h1 {
+    width: 760px;
+}
+
+/* `<!-- _class: title small -->`: title at the master position, body in white line boxes */
+section.title.small h1 {
+    top: 204px;
+    bottom: auto;
+    width: 702px;
+    font-size: 100px;
+    line-height: 1.04;
+}
+
+section.title.small p {
+    top: 456px;
+    width: 650px;
+    background: none;
+    padding: 0;
+    font-family: var(--font-sans);
+    font-size: 26px;
+    line-height: 1.3;
+}
+
+section.title.small p span {
+    background: #fff;
+    padding: 2px 4px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}

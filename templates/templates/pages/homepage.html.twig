@@ -1,0 +1,7 @@
+{% extends 'templates/base.html.twig' %}
+
+{% block content %}
+    {{ include('organisms/hero.html.twig', {title: content.title}, with_context: false) }}
+
+    {{ include('organisms/sections.html.twig', {sections: content.sections, view: view.sections|default([])}, with_context: false) }}
+{% endblock %}

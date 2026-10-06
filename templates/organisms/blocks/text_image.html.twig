@@ -1,0 +1,12 @@
+<div class="block block--text-image{{ content.image|default ? ' block--image-' ~ view.image.displayOption|default('right') }}">
+    <div class="block__text">{{ content.text|default('')|raw }}</div>
+
+    {% if content.image|default %}
+        <figure class="block__image">
+            <img src="{{ content.image.thumbnails['800x'] }}" alt="{{ content.image.title }}" loading="lazy">
+            {% if content.image.description|default %}
+                <figcaption>{{ content.image.description }}</figcaption>
+            {% endif %}
+        </figure>
+    {% endif %}
+</div>

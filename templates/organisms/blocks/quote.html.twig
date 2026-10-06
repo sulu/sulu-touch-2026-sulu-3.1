@@ -1,0 +1,18 @@
+{% set quote = content.quote %}
+{% if quote %}
+    {% set author = quote.author|default %}
+    <figure class="block block--quote">
+        <blockquote>{{ quote.quote|nl2br }}</blockquote>
+        {% if author %}
+            <figcaption>
+                {% if author.avatar|default %}
+                    <img src="{{ author.avatar.thumbnails['120x120'] }}" alt="{{ author.fullName }}">
+                {% endif %}
+                <span>
+                    <strong>{{ author.fullName }}</strong>
+                    {% if author.positionName|default %}<br>{{ author.positionName }}{% endif %}
+                </span>
+            </figcaption>
+        {% endif %}
+    </figure>
+{% endif %}

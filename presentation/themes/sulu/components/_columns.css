@@ -1,0 +1,9 @@
+/* `::: columns` — two equal text columns. */
+.columns {
+    display: flex;
+    gap: 50px;
+}
+
+.columns > * {
+    flex: 1;
+}

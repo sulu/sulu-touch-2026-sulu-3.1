@@ -1,0 +1,20 @@
+{% extends 'templates/base.html.twig' %}
+
+{% block content %}
+    <article class="article">
+        {{ include('organisms/hero.html.twig', {title: content.title, lead: content.lead, narrow: true}, with_context: false) }}
+
+        {% if content.headerImage|default %}
+            <div class="container">
+                <img class="article__header-image" src="{{ content.headerImage.thumbnails['1600x600'] }}"
+                     alt="{{ content.headerImage.title }}">
+            </div>
+        {% endif %}
+
+        {% if content.intro|default %}
+            <div class="container container--narrow article__intro">{{ content.intro|raw }}</div>
+        {% endif %}
+
+        {{ include('organisms/sections.html.twig', {sections: content.sections, view: view.sections|default([])}, with_context: false) }}
+    </article>
+{% endblock %}

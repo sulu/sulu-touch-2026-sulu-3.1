@@ -1,0 +1,9 @@
+<div class="block block--downloads">
+    <ul class="downloads">
+        {% for file in content.files|default([]) %}
+            <li class="downloads__item">
+                <a href="{{ file.url }}" download>{{ file.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

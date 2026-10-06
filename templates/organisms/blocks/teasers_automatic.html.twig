@@ -1,0 +1,16 @@
+<div class="block block--teasers">
+    {% if content.headline|default %}
+        <h3 class="block__headline">{{ content.headline }}</h3>
+    {% endif %}
+
+    <div class="teaser-grid">
+        {% for article in content.articles|default([]) %}
+            {{ include('organisms/teaser.html.twig', {
+                url: sulu_content_path(article.url),
+                title: article.excerptTitle|default(article.title),
+                description: article.excerptDescription,
+                image: article.excerptImage,
+            }, with_context: false) }}
+        {% endfor %}
+    </div>
+</div>

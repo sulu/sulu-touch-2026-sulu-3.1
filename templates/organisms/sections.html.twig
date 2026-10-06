@@ -1,0 +1,15 @@
+{# Renders a "sections" block; each section includes blocks/<type>.html.twig for its nested blocks with their view data. #}
+{% for section in sections|default([]) %}
+    {% set section_view = view[loop.index0]|default({}) %}
+    <section class="section">
+        <div class="container">
+            {% if section.headline|default %}
+                <h2 class="section__headline">{{ section.headline }}</h2>
+            {% endif %}
+
+            {% for block in section.blocks|default([]) %}
+                {{ include('organisms/blocks/' ~ block.type ~ '.html.twig', {content: block, view: section_view.blocks[loop.index0]|default({})}, with_context: false) }}
+            {% endfor %}
+        </div>
+    </section>
+{% endfor %}

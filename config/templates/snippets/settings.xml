@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<template xmlns="http://schemas.sulu.io/template/template"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
+
+    <key>settings</key>
+
+    <areas>
+        <area key="settings" cache-invalidation="true">
+            <meta>
+                <title lang="en">Settings</title>
+                <title lang="de">Einstellungen</title>
+            </meta>
+        </area>
+    </areas>
+
+    <meta>
+        <title lang="en">Settings</title>
+        <title lang="de">Einstellungen</title>
+    </meta>
+
+    <properties>
+        <property name="title" type="text_line" mandatory="true">
+            <meta>
+                <title lang="en">Title</title>
+                <title lang="de">Titel</title>
+                <info_text lang="en">Internal only, not shown on the website.</info_text>
+                <info_text lang="de">Nur intern, wird auf der Website nicht angezeigt.</info_text>
+            </meta>
+
+            <tag name="sulu.node.name"/>
+        </property>
+
+        <property name="account" type="single_account_selection" mandatory="true">
+            <meta>
+                <title lang="en">Organization</title>
+                <title lang="de">Organisation</title>
+            </meta>
+        </property>
+    </properties>
+</template>

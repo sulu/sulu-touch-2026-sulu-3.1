@@ -1,0 +1,83 @@
+{
+    "settings": "Paramètres du site",
+    "homepage": {
+        "title": "Accueil",
+        "featured": "À la une",
+        "editorsPicks": "Choix de la rédaction",
+        "latest": "Dernières nouvelles",
+        "news": "Actualités",
+        "blog": "Du blog"
+    },
+    "pages": {
+        "news": {
+            "title": "Actualités",
+            "url": "/actualites",
+            "intro": "Les dernières annonces, versions et événements."
+        },
+        "blog": {
+            "title": "Blog",
+            "url": "/blog",
+            "intro": "Histoires, guides et opinions de notre équipe."
+        }
+    },
+    "sections": {
+        "story": "L'histoire",
+        "next": "La suite"
+    },
+    "quotes": [
+        ["Livrer petit, livrer souvent", "Les meilleures versions sont les plus ennuyeuses : petites, fréquentes et entièrement réversibles."],
+        ["Le contenu d'abord", "Les rédacteurs ne veulent pas plus de champs. Ils veulent les bons champs dans le bon ordre."],
+        ["La performance est une fonctionnalité", "Chaque milliseconde gagnée sur une page est une milliseconde que nos lecteurs passent sur le contenu."],
+        ["Ouvert par défaut", "L'open source n'est pas une licence, c'est l'habitude de travailler en public et d'écouter."],
+        ["Systèmes de design", "Une bonne bibliothèque de blocs permet aux rédacteurs de créer des pages que nous n'avons jamais dû concevoir."],
+        ["Communauté", "Les questions posées dans notre communauté façonnent notre feuille de route plus que n'importe quelle réunion."]
+    ],
+    "paragraphs": {
+        "news": [
+            "Le changement est déployé chez tous les clients au cours des prochaines semaines. Les projets existants continuent de fonctionner sans migration, et les notes de version décrivent chaque étape pour les équipes qui veulent adopter les nouveautés tout de suite.",
+            "Nous avons travaillé étroitement avec des agences partenaires pendant la phase bêta. Leurs retours ont remodelé deux fonctionnalités et en ont supprimé une, ce qui a rendu la version finale plus petite et plus simple à expliquer.",
+            "Les équipes qui veulent l'essayer peuvent suivre le guide de mise à jour ou rejoindre l'une des permanences ouvertes, où l'équipe principale répond en direct et recueille des idées pour la prochaine itération.",
+            "Le programme complet, les enregistrements et les présentations seront publiés sur cette page. Abonnez-vous à la newsletter pour être averti dès que de nouveaux contenus sont disponibles."
+        ],
+        "blog": [
+            "Nous sommes partis d'une seule question : que doit voir un rédacteur à l'écran pour terminer une page sans demander l'aide d'un développeur ? Y répondre honnêtement a supprimé la moitié des champs prévus.",
+            "L'approche est simple à décrire et difficile à appliquer : garder des modèles petits, nommer chaque champ selon ce qu'il signifie pour le lecteur et laisser les blocs porter la variation plutôt que de nouveaux modèles.",
+            "En pratique, nous avons associé développeurs et rédacteurs pendant une semaine. Les rédacteurs apportaient du vrai contenu, les développeurs les modèles, et chaque écart devenait un ticket le jour même.",
+            "Rien de tout cela ne demande une grande équipe. Une structure claire, quelques blocs réutilisables et l'habitude de relire ensemble de vraies pages mènent la plupart des projets très loin."
+        ]
+    },
+    "news": [
+        ["Sulu 3.1 est disponible", "La nouvelle version mineure apporte des aperçus plus rapides, des blocs globaux imbriqués et un nouvel éditeur de zones de snippets."],
+        ["Le programme de Sulu Touch 2026 est publié", "Deux jours de conférences et d'ateliers sur la modélisation de contenu, la performance et l'écosystème Sulu."],
+        ["Lancement du nouveau programme partenaires", "Les agences qui travaillent avec Sulu obtiennent un accès anticipé aux versions, des formations et un contact direct avec l'équipe principale."],
+        ["Version de sécurité pour 3.0 et 3.1", "Une version coordonnée corrige un problème dans la validation des téléversements de médias. La mise à jour est recommandée pour tous les projets."],
+        ["La documentation déménage", "La documentation passe sur une nouvelle plateforme avec des guides versionnés, une recherche plein texte et des exemples à copier."],
+        ["Le bundle Article rejoint le cœur", "Les articles font désormais partie de sulu/sulu et partagent le stockage de contenu avec les pages et les snippets."],
+        ["Récapitulatif de l'appel communautaire de septembre", "Ce mois-ci, nous avons parlé de l'API des paramètres de blocs, des outils de mise à jour et des projets pour la prochaine version mineure."],
+        ["Sulu remporte un prix open source", "Le jury a souligné l'attention portée aux rédacteurs et le support à long terme de ses versions majeures."],
+        ["Hacktoberfest avec Sulu", "Des tickets pour les premiers contributeurs sont prêts et l'équipe principale propose des revues sous 48 heures."],
+        ["Serveur MCP pour Sulu en bêta", "Les assistants IA peuvent désormais lire et modifier les pages, articles et snippets via une interface MCP documentée."],
+        ["Nouveau bureau à Vienne", "L'équipe s'agrandit et ouvre un deuxième bureau pour être plus proche des clients et partenaires de l'est de l'Autriche."],
+        ["Support à long terme de la 2.6 prolongé", "Les projets qui ne peuvent pas encore migrer reçoivent des correctifs de sécurité pendant douze mois de plus."],
+        ["Intégration de la recherche avec SEAL", "La couche de recherche prend désormais en charge Loupe, Meilisearch et Elasticsearch via une seule interface d'adaptateur."],
+        ["Dates des ateliers du printemps", "Les ateliers pratiques sur les modèles, les blocs et les mises à jour sont ouverts aux inscriptions."],
+        ["Audit d'accessibilité de l'interface d'administration terminé", "Un audit externe a examiné l'interface d'administration et les premières améliorations sont déjà intégrées."]
+    ],
+    "blog": [
+        ["Pourquoi nous modélisons le contenu en sections", "Les sections offrent aux rédacteurs une structure de page qu'ils comprennent et aux développeurs un seul endroit pour la styliser."],
+        ["Les blocs globaux en pratique", "Définir un bloc une fois et le réutiliser dans plusieurs modèles garde des formulaires cohérents et des modèles courts."],
+        ["Les zones de snippets expliquées", "Une zone de snippet transforme un snippet en paramètres globaux du site que les rédacteurs modifient sans déploiement."],
+        ["Cinq règles pour des modèles propres", "Des modèles courts, des noms parlants et des blocs pour la variation rendent un projet facile à maintenir pendant des années."],
+        ["De 2.6 à 3.1 : journal d'une mise à jour", "Nous avons mis à jour un projet client de taille moyenne et noté chaque étape, surprise et raccourci."],
+        ["Teasers : manuels ou automatiques ?", "Quand un rédacteur doit choisir le contenu à la main et quand une liste de contenu intelligent fait mieux le travail."],
+        ["Concevoir d'abord pour les rédacteurs", "Le formulaire d'administration est le produit des rédacteurs, nous le concevons donc avec le même soin que le site."],
+        ["Des formats d'image qui passent à l'échelle", "Quelques formats bien nommés couvrent la plupart des sites et gardent le cache des médias sous contrôle."],
+        ["Écrire des fixtures qui racontent une histoire", "De bonnes fixtures montrent à quoi le site doit ressembler et rendent chaque capture d'écran de revue utile."],
+        ["La force discrète des catégories", "Les catégories sont le moyen le plus simple de structurer les articles entre les modèles et de filtrer les listes du site."],
+        ["Ce que nous avons appris de 100 lancements", "Les habitudes qui ont tenu les délais, et les quelques décisions qui nous ont toujours rattrapés."],
+        ["Des budgets de performance pour les sites CMS", "Fixer un budget tôt garde des pages rapides longtemps après le lancement, même avec un contenu qui grandit."],
+        ["Contacts et organisations comme contenu", "Utiliser les contacts et les organisations dans les modèles évite de dupliquer noms, rôles et logos sur les pages."],
+        ["Relire en binôme avec les rédacteurs", "Relire de vraies pages avec les rédacteurs trouve plus de problèmes que n'importe quelle suite de tests automatisés."],
+        ["Un guide de style dans un seul fichier CSS", "Pour les petits et moyens sites, une simple feuille de style avec des propriétés personnalisées suffit souvent."]
+    ]
+}
