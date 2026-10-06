@@ -1,0 +1,5 @@
+sulu_notifier:
+    channels:
+        'chat/fakechat+email':
+            - Sulu\Page\Domain\Event\PageWorkflowTransitionAppliedEvent
+            - Sulu\Article\Domain\Event\ArticleWorkflowTransitionAppliedEvent

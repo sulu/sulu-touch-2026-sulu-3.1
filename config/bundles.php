@@ -46,4 +46,5 @@ return [
     Sulu\CustomUrl\Infrastructure\Symfony\HttpKernel\SuluCustomUrlBundle::class => ['all' => true],
     CmsIg\Seal\Integration\Symfony\SealBundle::class => ['all' => true],
     Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle::class => ['all' => true],
+    Sulu\Notifier\Infrastructure\Symfony\HttpKernel\SuluNotifierBundle::class => ['all' => true],
 ];
