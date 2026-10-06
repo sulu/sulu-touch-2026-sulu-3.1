@@ -1,7 +1,7 @@
 {# Renders a "sections" block; each section includes blocks/<type>.html.twig for its nested blocks with their view data. #}
 {% for section in sections|default([]) %}
     {% set section_view = view[loop.index0]|default({}) %}
-    <section class="section">
+    <section {{ sulu_preview_deep_link(section._id|default(null)) }} class="section">
         <div class="container">
             {% if section.headline|default %}
                 <h2 class="section__headline">{{ section.headline }}</h2>

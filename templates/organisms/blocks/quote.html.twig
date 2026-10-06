@@ -1,7 +1,7 @@
 {% set quote = content.quote %}
 {% if quote %}
     {% set author = quote.author|default %}
-    <figure class="block block--quote">
+    <figure {{ sulu_preview_deep_link(content._id|default(null)) }} class="block block--quote">
         <blockquote>{{ quote.quote|nl2br }}</blockquote>
         {% if author %}
             <figcaption>

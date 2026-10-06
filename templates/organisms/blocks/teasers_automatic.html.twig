@@ -1,4 +1,4 @@
-<div class="block block--teasers">
+<div {{ sulu_preview_deep_link(content._id|default(null)) }} class="block block--teasers">
     {% if content.headline|default %}
         <h3 class="block__headline">{{ content.headline }}</h3>
     {% endif %}

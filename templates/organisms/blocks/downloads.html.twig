@@ -1,4 +1,4 @@
-<div class="block block--downloads">
+<div {{ sulu_preview_deep_link(content._id|default(null)) }} class="block block--downloads">
     <ul class="downloads">
         {% for file in content.files|default([]) %}
             <li class="downloads__item">
