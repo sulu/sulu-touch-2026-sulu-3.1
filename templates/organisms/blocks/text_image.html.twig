@@ -1,4 +1,4 @@
-<div class="block block--text-image{{ content.image|default ? ' block--image-' ~ view.image.displayOption|default('right') }}">
+<div {{ sulu_preview_deep_link(content._id|default(null)) }} class="block block--text-image{{ content.image|default ? ' block--image-' ~ view.image.displayOption|default('right') }}">
     <div class="block__text">{{ content.text|default('')|raw }}</div>
 
     {% if content.image|default %}
