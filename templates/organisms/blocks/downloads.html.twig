@@ -3,6 +3,9 @@
         {% for file in content.files|default([]) %}
             <li class="downloads__item">
                 <a href="{{ file.url }}" download>{{ file.title }}</a>
+                {% if file.contentLocales|default([]) is not empty %}
+                    <span class="downloads__languages">{{ file.contentLocales|map(language => language|upper)|join(', ') }}</span>
+                {% endif %}
             </li>
         {% endfor %}
     </ul>
