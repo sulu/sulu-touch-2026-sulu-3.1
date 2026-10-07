@@ -218,6 +218,15 @@
             "config/packages/debug.yaml"
         ]
     },
+    "symfony/fake-chat-notifier": {
+        "version": "8.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "5.3",
+            "ref": "25bdcc3ae00d284b863f1faecf14610aecebfeb5"
+        }
+    },
     "symfony/flex": {
         "version": "2.10",
         "recipe": {
@@ -297,6 +306,18 @@
         },
         "files": [
             "config/packages/monolog.yaml"
+        ]
+    },
+    "symfony/notifier": {
+        "version": "8.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "5.0",
+            "ref": "178877daf79d2dbd62129dd03612cb1a2cb407cc"
+        },
+        "files": [
+            "config/packages/notifier.yaml"
         ]
     },
     "symfony/property-info": {

@@ -617,7 +617,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         decryption_env_var?: scalar|Param|null, // Default: "base64:default::SYMFONY_DECRYPTION_SECRET"
  *     },
  *     notifier?: bool|array{ // Notifier configuration
- *         enabled?: bool|Param, // Default: false
+ *         enabled?: bool|Param, // Default: true
  *         message_bus?: scalar|Param|null, // The message bus to use. Defaults to the default bus if the Messenger component is installed. // Default: null
  *         chatter_transports?: array<string, scalar|Param|null>,
  *         texter_transports?: array<string, scalar|Param|null>,
@@ -2767,6 +2767,9 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     enable_profiler?: bool|Param, // Whether or not to enable the profiler collector to calculate and visualize migration status. This adds some queries overhead. // Default: false
  *     transactional?: bool|Param, // Whether or not to wrap migrations in a single transaction. // Default: true
  * }
+ * @psalm-type SuluNotifierConfig = array{
+ *     channels?: array<string, list<scalar|Param|null>>,
+ * }
  * @psalm-type ConfigType = array{
  *     imports?: ImportsConfig,
  *     parameters?: ParametersConfig,
@@ -2809,6 +2812,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     sulu_custom_url?: SuluCustomUrlConfig,
  *     cmsig_seal?: CmsigSealConfig,
  *     doctrine_migrations?: DoctrineMigrationsConfig,
+ *     sulu_notifier?: SuluNotifierConfig,
  *     "when@dev"?: array{
  *         imports?: ImportsConfig,
  *         parameters?: ParametersConfig,
@@ -2854,6 +2858,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         sulu_custom_url?: SuluCustomUrlConfig,
  *         cmsig_seal?: CmsigSealConfig,
  *         doctrine_migrations?: DoctrineMigrationsConfig,
+ *         sulu_notifier?: SuluNotifierConfig,
  *     },
  *     "when@prod"?: array{
  *         imports?: ImportsConfig,
@@ -2897,6 +2902,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         sulu_custom_url?: SuluCustomUrlConfig,
  *         cmsig_seal?: CmsigSealConfig,
  *         doctrine_migrations?: DoctrineMigrationsConfig,
+ *         sulu_notifier?: SuluNotifierConfig,
  *     },
  *     "when@stage"?: array{
  *         imports?: ImportsConfig,
@@ -2940,6 +2946,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         sulu_custom_url?: SuluCustomUrlConfig,
  *         cmsig_seal?: CmsigSealConfig,
  *         doctrine_migrations?: DoctrineMigrationsConfig,
+ *         sulu_notifier?: SuluNotifierConfig,
  *     },
  *     "when@test"?: array{
  *         imports?: ImportsConfig,
@@ -2986,6 +2993,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         sulu_custom_url?: SuluCustomUrlConfig,
  *         cmsig_seal?: CmsigSealConfig,
  *         doctrine_migrations?: DoctrineMigrationsConfig,
+ *         sulu_notifier?: SuluNotifierConfig,
  *     },
  *     "when@website"?: array{
  *         imports?: ImportsConfig,
@@ -3029,6 +3037,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         sulu_custom_url?: SuluCustomUrlConfig,
  *         cmsig_seal?: CmsigSealConfig,
  *         doctrine_migrations?: DoctrineMigrationsConfig,
+ *         sulu_notifier?: SuluNotifierConfig,
  *     },
  *     ...<string, ExtensionType|array{ // extra keys must follow the when@%env% pattern or match an extension alias
  *         imports?: ImportsConfig,
