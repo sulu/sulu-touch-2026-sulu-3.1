@@ -58,6 +58,10 @@
                 <title lang="en">Intro</title>
                 <title lang="de">Einleitung</title>
             </meta>
+
+            <params>
+                <param name="config" value="intro"/>
+            </params>
         </property>
 
         <block name="sections" default-type="section" minOccurs="0">

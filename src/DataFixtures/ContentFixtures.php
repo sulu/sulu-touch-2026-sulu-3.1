@@ -187,7 +187,7 @@ class ContentFixtures extends Fixture implements OrderedFixtureInterface
             'title' => $title,
             'url' => $url,
             'navigationContexts' => ['main'],
-            'intro' => '<p>' . $intro . '</p>',
+            'intro' => $intro,
             'articles' => [
                 'categories' => [$this->categoryId($categoryKey)],
                 'categoryOperator' => 'OR',

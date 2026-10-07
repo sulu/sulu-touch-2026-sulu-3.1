@@ -41,6 +41,10 @@
                 <title lang="en">Intro</title>
                 <title lang="de">Einleitung</title>
             </meta>
+
+            <params>
+                <param name="config" value="intro"/>
+            </params>
         </property>
 
         <property name="articles" type="smart_content">
