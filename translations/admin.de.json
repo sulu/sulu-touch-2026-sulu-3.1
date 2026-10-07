@@ -1,4 +1,6 @@
 {
     "sulu_admin.template_group.blog": "Blog",
-    "sulu_admin.template_group.news": "Neuigkeiten"
+    "sulu_admin.template_group.news": "Neuigkeiten",
+    "sulu_admin.template_group.configuration": "Konfiguration",
+    "sulu_admin.template_group.content": "Inhalt"
 }
