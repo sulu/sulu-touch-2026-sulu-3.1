@@ -10,6 +10,9 @@
     <controller>Sulu\Content\UserInterface\Controller\Website\ContentController::indexAction</controller>
     <cacheLifetime>604800</cacheLifetime>
 
+    <!-- blog articles are published without review -->
+    <tag name="sulu_content.request_workflow" workflow="none"/>
+
     <meta>
         <title lang="en">Blog</title>
         <title lang="de">Blog</title>

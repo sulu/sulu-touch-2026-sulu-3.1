@@ -1,1 +1,8 @@
-sulu_content: {}
+sulu_content:
+    request_workflows:
+        default:
+            resources: ['articles']
+            required_user_approvals: 1
+            pre_validators:
+                seo_required:
+                    fields: ['title', 'description']
